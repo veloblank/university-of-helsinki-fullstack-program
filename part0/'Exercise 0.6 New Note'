@@ -1,0 +1,8 @@
+browser->server: POST request sent to https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server->browser: json object with {"message": "note created"}
+note over browser
+JSON object can be parsed for "success".
+Browser displays note by appending note body to node on DOM tree.
+No page refresh occurs, only DOM manipulation.
+end note
+

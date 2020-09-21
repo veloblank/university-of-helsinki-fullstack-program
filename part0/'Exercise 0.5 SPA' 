@@ -1,0 +1,16 @@
+browser->server: GET request to https://studies.cs.helsinki.fi/exampleapp/spa
+server->browser: text/html file sent back
+browser->server: GET request to https://studies.cs.helsinki.fi/exampleapp/main.css
+server->browser: text/css file sent back with main.css
+browser->server: GET request to https://studies.cs.helsinki.fi/exampleapp/spa.js
+server->browser: spa.js sent back to browser
+note over browser
+spa.js requests json data from server. JSON data is an 
+array of json objects
+end note
+browser->server: HTTP GET request to https://studies.cs.helsinki.fi/exampleapp/data.json
+server->browser: {content: "test", date: "2020-09-20T17:27:03.429Z"}
+note over browser
+JS functions parse the data and create DOM nodes 
+displaying the notes.
+end note 
